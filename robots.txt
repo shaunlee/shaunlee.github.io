@@ -4,3 +4,4 @@ Allow: /
 Sitemap: https://shaunlee.github.io/sitemap.xml
 Sitemap: https://shaunlee.github.io/beanstalkd-rs/sitemap.xml
 Sitemap: https://shaunlee.github.io/simpleconf/sitemap.xml
+Sitemap: https://shaunlee.github.io/alpinejs-router/sitemap.xml

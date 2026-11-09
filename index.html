@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shaun: full-stack technology leader and open-source developer</title>
-<meta name="description" content="Shaun, full-stack technology leader and former R&amp;D Director (25+ years). Open source: beanstalkd-rs, a Rust work queue, and simpleconf, a Go config server.">
+<meta name="description" content="Shaun, full-stack technology leader and former R&amp;D Director (25+ years). Open source: beanstalkd-rs, a Rust work queue; simpleconf, a Go config server; and alpinejs-router, a router for Alpine.js.">
 <meta name="author" content="Shaun">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://shaunlee.github.io/">
@@ -15,18 +15,18 @@
 <meta property="og:site_name" content="Shaun">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="Shaun: full-stack technology leader and open-source developer">
-<meta property="og:description" content="Full-stack technology leader with 25+ years of experience. Open-source projects: beanstalkd-rs, a drop-in beanstalkd replacement in Rust, and simpleconf, a JSON configuration server in Go.">
+<meta property="og:description" content="Full-stack technology leader with 25+ years of experience. Open-source projects: beanstalkd-rs, a drop-in beanstalkd replacement in Rust; simpleconf, a JSON configuration server in Go; and alpinejs-router, a 3.2 kB client-side router for Alpine.js.">
 <meta property="og:url" content="https://shaunlee.github.io/">
 <meta property="og:image" content="https://shaunlee.github.io/images/social-preview.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="640">
-<meta property="og:image:alt" content="Shaun: small servers that do one job well. Open-source infrastructure in Rust and Go">
+<meta property="og:image:alt" content="Shaun: small tools that do one job well. Open source in Rust, Go and JavaScript">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Shaun: full-stack technology leader and open-source developer">
-<meta name="twitter:description" content="Full-stack technology leader with 25+ years of experience. Open-source projects: beanstalkd-rs, a drop-in beanstalkd replacement in Rust, and simpleconf, a JSON configuration server in Go.">
+<meta name="twitter:description" content="Full-stack technology leader with 25+ years of experience. Open-source projects: beanstalkd-rs, a drop-in beanstalkd replacement in Rust; simpleconf, a JSON configuration server in Go; and alpinejs-router, a 3.2 kB client-side router for Alpine.js.">
 <meta name="twitter:image" content="https://shaunlee.github.io/images/social-preview.png">
-<meta name="twitter:image:alt" content="Shaun: small servers that do one job well. Open-source infrastructure in Rust and Go">
+<meta name="twitter:image:alt" content="Shaun: small tools that do one job well. Open source in Rust, Go and JavaScript">
 <meta name="theme-color" content="#0f1523">
 <meta name="color-scheme" content="dark">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -79,6 +79,9 @@
         "Agentic workflows",
         "Rust",
         "Go",
+        "JavaScript",
+        "Alpine.js",
+        "Client-side routing",
         "Message queues",
         "Configuration management",
         "Raft consensus"
@@ -125,6 +128,27 @@
       ]
     },
     {
+      "@type": ["SoftwareApplication", "SoftwareSourceCode"],
+      "@id": "https://shaunlee.github.io/alpinejs-router/#software",
+      "name": "alpinejs-router",
+      "alternateName": "@shaun/alpinejs-router",
+      "description": "A lightweight client-side router for Alpine.js. Routes are declared in HTML with x-route templates and x-link anchors, with dynamic params, external templates, and hash or HTML5 history modes; 3.2 kB gzipped and 6.25M static route matches a second.",
+      "url": "https://shaunlee.github.io/alpinejs-router/",
+      "codeRepository": "https://github.com/shaunlee/alpinejs-router",
+      "programmingLanguage": "JavaScript",
+      "runtimePlatform": "Alpine.js 3",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Any (web browser)",
+      "license": "https://opensource.org/licenses/MIT",
+      "author": {
+        "@id": "https://shaunlee.github.io/#person"
+      },
+      "sameAs": [
+        "https://github.com/shaunlee/alpinejs-router",
+        "https://www.npmjs.com/package/@shaun/alpinejs-router"
+      ]
+    },
+    {
       "@type": "ItemList",
       "@id": "https://shaunlee.github.io/#projects",
       "name": "Projects by Shaun",
@@ -141,6 +165,13 @@
           "position": 2,
           "item": {
             "@id": "https://shaunlee.github.io/simpleconf/#software"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://shaunlee.github.io/alpinejs-router/#software"
           }
         }
       ]
@@ -180,7 +211,7 @@
   <div class="container hero-inner">
     <div class="hero-copy">
       <!-- The eyebrow sits inside the h1 so the heading carries the name; it keeps the look of a separate line. -->
-      <h1><span class="hero-eyebrow">Shaun · Open-source infrastructure in Rust and Go</span> Small servers<br>that do one job well.</h1>
+      <h1><span class="hero-eyebrow">Shaun · Open source in Rust, Go and JavaScript</span> Small tools<br>that do one job well.</h1>
       <p class="hero-lede">Full-stack technology leader with 25+ years of experience evolving alongside the software industry. A veteran architect and former R&amp;D Director who remains deeply hands-on with emerging technologies, specializing in scalable systems, high-performing engineering cultures, and the design and orchestration of AI agents and agentic workflows to accelerate delivery and amplify team capabilities.</p>
       <div class="actions">
         <a class="btn btn-primary" href="#projects">See projects</a>
@@ -190,8 +221,9 @@
     <div class="terminal">
       <div class="terminal-title" aria-hidden="true">~/projects</div>
 <pre class="terminal-body ls"><span class="dim">$</span> ls ~/projects
-<a class="o" href="#beanstalkd-rs">beanstalkd-rs</a>   rust   work queue
-<a class="c" href="#simpleconf">simpleconf</a>      go     config server
+<a class="o" href="#beanstalkd-rs">beanstalkd-rs</a>     rust   work queue
+<a class="c" href="#simpleconf">simpleconf</a>        go     config server
+<a class="y" href="#alpinejs-router">alpinejs-router</a>   js     web router
 <span class="dim">$</span> <span class="cursor" aria-hidden="true"></span></pre>
     </div>
   </div>
@@ -267,6 +299,39 @@
           </div>
         </div>
       </li>
+
+      <li class="project accent-yellow" id="alpinejs-router">
+        <div class="project-copy">
+          <span class="tag">JavaScript</span>
+          <h3><a href="/alpinejs-router/">alpinejs-router</a></h3>
+          <p class="tagline">Routes in your HTML. Alpine renders them.</p>
+          <p class="desc">A client-side router for Alpine.js. Declare routes with <code>x-route</code> templates and <code>x-link</code> anchors, with dynamic params, external templates and hash or HTML5 history. No dependencies besides Alpine.</p>
+          <dl class="figures">
+            <div><dt>3.2 kB</dt><dd>minified and gzipped</dd></div>
+            <div><dt>6.25M</dt><dd>static route matches a second</dd></div>
+          </dl>
+          <div class="chip">
+            <code><span class="prompt">$</span> <span id="cmd-alpinejs-router">npm install @shaun/alpinejs-router</span></code>
+            <button class="copy" type="button" data-copy="cmd-alpinejs-router" aria-label="Copy the alpinejs-router install command"><svg class="idle" aria-hidden="true"><use href="#copy"/></svg><svg class="ok" aria-hidden="true"><use href="#check"/></svg></button>
+          </div>
+          <p class="links">
+            <a class="primary" href="/alpinejs-router/">Website<span class="sr-only"> of alpinejs-router</span>&nbsp;<span aria-hidden="true">→</span></a>
+            <a href="https://github.com/shaunlee/alpinejs-router">GitHub<span class="sr-only"> repository of alpinejs-router</span></a>
+            <a href="https://www.npmjs.com/package/@shaun/alpinejs-router">npm</a>
+          </p>
+        </div>
+        <div class="preview">
+          <div class="doc" role="img" aria-label="HTML for a route: an x-link anchor to /users/42 and an x-route template for /users/:id that shows the id param">
+            <div class="doc-title">index.html</div>
+<pre class="doc-body html" aria-hidden="true"><span class="t">&lt;a</span> <span class="at">x-link</span> <span class="at">href</span>=<span class="s">"/users/42"</span><span class="t">&gt;</span>User 42<span class="t">&lt;/a&gt;</span>
+
+<span class="hl"><span class="t">&lt;template</span> <span class="at">x-route</span>=<span class="s">"/users/:id"</span><span class="t">&gt;</span></span>
+  <span class="t">&lt;h1&gt;</span>User #<span class="t">&lt;span</span>
+    <span class="at">x-text</span>=<span class="s">"$router.params.id"</span><span class="t">&gt;&lt;/span&gt;&lt;/h1&gt;</span>
+<span class="t">&lt;/template&gt;</span></pre>
+          </div>
+        </div>
+      </li>
     </ol>
   </div>
 </section>
@@ -282,6 +347,7 @@
     <nav aria-label="Elsewhere">
       <a href="https://github.com/shaunlee">GitHub</a>
       <a href="https://hub.docker.com/u/shonhen">Docker Hub</a>
+      <a href="https://www.npmjs.com/~shaun">npm</a>
     </nav>
   </div>
 </footer>

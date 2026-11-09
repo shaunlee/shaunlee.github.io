@@ -2,15 +2,17 @@
 
 > Shaun (GitHub: shaunlee) is a full-stack technology leader with 25+ years of experience evolving alongside the software industry. A veteran architect and former R&D Director who remains deeply hands-on with emerging technologies, specializing in scalable systems, high-performing engineering cultures, and the design and orchestration of AI agents and agentic workflows to accelerate delivery and amplify team capabilities.
 
-His open-source work is infrastructure in Rust and Go: small servers that do one job well, each compatible with what it replaces, measured against it, and shipped as one binary. All projects are MIT-licensed.
+His open-source work is small tools that do one job well: infrastructure servers in Rust and Go, each compatible with what it replaces, measured against it and shipped as one binary, plus a client-side router for Alpine.js. All projects are MIT-licensed.
 
 ## Projects
 
 - [beanstalkd-rs](https://shaunlee.github.io/beanstalkd-rs/): A drop-in replacement for the beanstalkd work queue, written in Rust. Byte-for-byte protocol compatible, so existing clients work unmodified; TLS, mutual TLS and token authentication, Prometheus metrics and optional Raft replication (3 or 5 nodes). 2.2x the throughput of beanstalkd with a binlog, 1.2-1.4x at 10-100 connections, 222 differential test cases against the C reference. Install: `cargo install bstkd` or `docker run shonhen/beanstalkd-rs`. Source: https://github.com/shaunlee/beanstalkd-rs. Details: [llms.txt](https://shaunlee.github.io/beanstalkd-rs/llms.txt)
 - [simpleconf](https://shaunlee.github.io/simpleconf/): A configuration server in Go that holds one JSON document; services read and write key paths such as `product.name` over HTTP or a line-based TCP protocol. Append-only file with configurable fsync, optional Raft cluster. About 1.02M HTTP GET/s at 200 connections and 16.5M pipelined TCP GET/s; a keyed read takes about 10 ns. Run: `docker run -p 23456:23456 shonhen/simpleconf`. Source: https://github.com/shaunlee/simpleconf. Details: [llms.txt](https://shaunlee.github.io/simpleconf/llms.txt)
+- [alpinejs-router](https://shaunlee.github.io/alpinejs-router/): A lightweight client-side router plugin for Alpine.js 3 (npm: `@shaun/alpinejs-router`). Routes are declared in HTML with `<template x-route="/path">` and `<a x-link href="/path">`, and read through the `$router` magic; dynamic params with optional regex, external route templates, hash or HTML5 history with an optional base path. About 3.2 kB gzipped, no dependencies besides Alpine.js; 6.25M static and 1.27M dynamic route matches a second with 4,000 routes. Install: `npm install @shaun/alpinejs-router`. Source: https://github.com/shaunlee/alpinejs-router. Details: [llms.txt](https://shaunlee.github.io/alpinejs-router/llms.txt)
 
 ## Elsewhere
 
 - [GitHub](https://github.com/shaunlee)
 - [crates.io](https://crates.io/users/shaunlee)
 - [Docker Hub](https://hub.docker.com/u/shonhen)
+- [npm](https://www.npmjs.com/~shaun)
